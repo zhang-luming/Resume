@@ -1,0 +1,75 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external}
+\usepackage{linespacing_fix}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+
+\begin{document}
+\pagenumbering{gobble}
+
+% -------------------- 页眉信息 --------------------
+\name{某某某}   % 姓名
+\contactInfo
+  {example@mail.com}           % 邮箱（示例）
+  {(+86)~138-0000-0000}        % 手机号（示例）
+  {https://your-website.com}   % 个人主页（示例）
+
+% -------------------- 教育背景 --------------------
+\section{\texorpdfstring{\faGraduationCap\ 教育背景}{教育背景}}
+\triplerowschool{某某大学}{计算机科学与技术（本科）}{20XX届}
+校内荣誉：示例奖学金若干。\\
+主修课程：ROS2、数据结构、计算机网络、操作系统、深度学习基础等。
+
+% -------------------- 专业技能 --------------------
+\section{\texorpdfstring{\faCogs\ 专业技能}{专业技能}}
+\begin{itemize}
+  \item 熟悉现代 C++ 特性；掌握 Linux、ROS2，具备机器人开发经验。
+  \item 熟悉 Git、Markdown；掌握 Python，可用于快速验证想法。
+  \item 了解 Docker；了解 CUDA、TensorRT，具备一定模型部署经验。
+\end{itemize}
+
+% -------------------- 实习经历 --------------------
+\section{\texorpdfstring{\faBuildingO\ 实习经历}{实习经历}}
+\triplerow{某智能车辆研究机构}{机器人开发实习生}{20XX年X月--至今}
+\textbf{岗位描述：}参与移动机器人感知与控制功能开发。负责通用底盘驱动设计、无人机运动控制模块开发，以及四足机器人自主导航相关工作。
+
+\textbf{主要工作：}
+\begin{itemize}
+  \item 构建通用底盘驱动 SDK，采用协议与运动学解耦的分层设计，实现多通信方式和多类运动模型统一适配。
+  \item 基于飞控与 ROS 接口编写通用无人机运动控制模块，实现姿态/速度/位置控制接口。
+  \item 基于四足机器人平台进行二次开发，部署 SLAM 与自主导航功能。
+\end{itemize}
+
+% -------------------- 项目经历 --------------------
+\section{\texorpdfstring{\faUsers\ 项目经历}{项目经历}}
+\triplerow{无人车系统设计}{项目负责人}{20XX年X月--X月}
+\textbf{项目描述：}基于某平台搭建自主导航小车，使用激光雷达与相机实现定位、障碍物识别与避障导航。通过模型压缩与部署优化使推理性能显著提升。
+
+\textbf{主要工作：}
+\begin{itemize}
+  \item 使用相机模型和 IPM 进行环境感知，结合 IMU 与编码器实现较高精度里程计。
+  \item 编写激光雷达驱动，完成多种通信方式与 ROS2 对接。
+  \item 使用 SLAM-ToolBox 生成地图，部署 Nav2 实现导航避障。
+  \item 调整 YOLO 系列模型结构以适配部署平台，通过量化工具完成模型部署与加速。
+\end{itemize}
+
+% -------------------- 获奖情况 --------------------
+\section{\texorpdfstring{\faHeartO\ 获奖情况}{获奖情况}}
+\award{国家级奖项}{某智能车竞赛}{20XX年X月}
+\award{国家级项目}{主持某创新创业项目结题}{20XX年X月}
+\award{软件著作权}{登记若干项}{20XX年X月}
+\award{省级奖项}{某计算机设计大赛}{20XX年X月}
+\award{省级奖项}{某软件设计大赛}{20XX年X月}
+
+% -------------------- 自我评价 --------------------
+\section{\texorpdfstring{\faInfo\ 自我评价}{自我评价}}
+\begin{itemize}
+  \item 对机器人领域具有持续兴趣，具备自驱力与快速学习能力；
+        关注行业前沿方向，当前兴趣集中于感知与控制。
+\end{itemize}
+
+\end{document}
